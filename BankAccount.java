@@ -21,7 +21,7 @@ public class BankAccount
     {
         if(this.amount - (amount+this.transactionFee)>=0)
         {
-            this.amount -= amount;
+            this.amount -= amount + this.transactionFee;
             System.out.println("You succesfully withdrawed " + amount + " dollars from your account");
         } else
         {
